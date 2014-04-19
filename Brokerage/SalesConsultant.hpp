@@ -37,6 +37,8 @@ public:
 
 	void setCompTerms(CompTerms& ct);
 	CompTerms& getCompTerms() {return *compTerms;}
+    
+    double getTravelCost();
 }; 
 
 #endif

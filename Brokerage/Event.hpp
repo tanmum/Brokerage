@@ -50,6 +50,7 @@ public:
     
     double getProfit();
     virtual double getCost() = 0;
+    double getTravelCost();
 }; 
 
 #endif
