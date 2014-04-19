@@ -9,6 +9,27 @@
 /* Begin PBXBuildFile section */
 		F669829E1900F316009D0399 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F669829D1900F316009D0399 /* main.cpp */; };
 		F66982A01900F316009D0399 /* Brokerage.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F669829F1900F316009D0399 /* Brokerage.1 */; };
+		F6E868201902304B00213D5F /* Address.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E867FA1902304B00213D5F /* Address.cpp */; };
+		F6E868211902304B00213D5F /* Company.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E867FC1902304B00213D5F /* Company.cpp */; };
+		F6E868221902304B00213D5F /* CompTerms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E867FE1902304B00213D5F /* CompTerms.cpp */; };
+		F6E868231902304B00213D5F /* Customer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E868001902304B00213D5F /* Customer.cpp */; };
+		F6E868241902304B00213D5F /* Deal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E868021902304B00213D5F /* Deal.cpp */; };
+		F6E868251902304B00213D5F /* Domain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E868041902304B00213D5F /* Domain.cpp */; };
+		F6E868261902304B00213D5F /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E868061902304B00213D5F /* Event.cpp */; };
+		F6E868271902304B00213D5F /* Meeting.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E868081902304B00213D5F /* Meeting.cpp */; };
+		F6E868281902304B00213D5F /* ObjectManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E8680A1902304B00213D5F /* ObjectManager.cpp */; };
+		F6E868291902304B00213D5F /* Order.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E8680C1902304B00213D5F /* Order.cpp */; };
+		F6E8682A1902304B00213D5F /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E8680F1902304B00213D5F /* Person.cpp */; };
+		F6E8682B1902304B00213D5F /* PhoneCall.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E868111902304B00213D5F /* PhoneCall.cpp */; };
+		F6E8682C1902304B00213D5F /* Product.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E868131902304B00213D5F /* Product.cpp */; };
+		F6E8682D1902304B00213D5F /* SalesConsultant.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E868151902304B00213D5F /* SalesConsultant.cpp */; };
+		F6E8682E1902304B00213D5F /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E868171902304B00213D5F /* State.cpp */; };
+		F6E8682F1902304B00213D5F /* Terms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E8681A1902304B00213D5F /* Terms.cpp */; };
+		F6E868301902304B00213D5F /* Travel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E8681C1902304B00213D5F /* Travel.cpp */; };
+		F6E868311902304B00213D5F /* Vendor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E8681E1902304B00213D5F /* Vendor.cpp */; };
+		F6E868351902309200213D5F /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E868321902309200213D5F /* Date.cpp */; };
+		F6E868361902309200213D5F /* List.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E868331902309200213D5F /* List.cpp */; };
+		F6E868371902309200213D5F /* String.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E868341902309200213D5F /* String.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +49,47 @@
 		F669829A1900F316009D0399 /* Brokerage */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Brokerage; sourceTree = BUILT_PRODUCTS_DIR; };
 		F669829D1900F316009D0399 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F669829F1900F316009D0399 /* Brokerage.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Brokerage.1; sourceTree = "<group>"; };
+		F6E867FA1902304B00213D5F /* Address.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Address.cpp; sourceTree = "<group>"; };
+		F6E867FB1902304B00213D5F /* Address.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Address.hpp; sourceTree = "<group>"; };
+		F6E867FC1902304B00213D5F /* Company.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Company.cpp; sourceTree = "<group>"; };
+		F6E867FD1902304B00213D5F /* Company.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Company.hpp; sourceTree = "<group>"; };
+		F6E867FE1902304B00213D5F /* CompTerms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CompTerms.cpp; sourceTree = "<group>"; };
+		F6E867FF1902304B00213D5F /* CompTerms.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CompTerms.hpp; sourceTree = "<group>"; };
+		F6E868001902304B00213D5F /* Customer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Customer.cpp; sourceTree = "<group>"; };
+		F6E868011902304B00213D5F /* Customer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Customer.hpp; sourceTree = "<group>"; };
+		F6E868021902304B00213D5F /* Deal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deal.cpp; sourceTree = "<group>"; };
+		F6E868031902304B00213D5F /* Deal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Deal.hpp; sourceTree = "<group>"; };
+		F6E868041902304B00213D5F /* Domain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Domain.cpp; sourceTree = "<group>"; };
+		F6E868051902304B00213D5F /* Domain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Domain.hpp; sourceTree = "<group>"; };
+		F6E868061902304B00213D5F /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
+		F6E868071902304B00213D5F /* Event.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Event.hpp; sourceTree = "<group>"; };
+		F6E868081902304B00213D5F /* Meeting.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Meeting.cpp; sourceTree = "<group>"; };
+		F6E868091902304B00213D5F /* Meeting.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Meeting.hpp; sourceTree = "<group>"; };
+		F6E8680A1902304B00213D5F /* ObjectManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjectManager.cpp; sourceTree = "<group>"; };
+		F6E8680B1902304B00213D5F /* ObjectManager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ObjectManager.hpp; sourceTree = "<group>"; };
+		F6E8680C1902304B00213D5F /* Order.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Order.cpp; sourceTree = "<group>"; };
+		F6E8680D1902304B00213D5F /* Order.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Order.hpp; sourceTree = "<group>"; };
+		F6E8680E1902304B00213D5F /* PersistentObject.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PersistentObject.hpp; sourceTree = "<group>"; };
+		F6E8680F1902304B00213D5F /* Person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
+		F6E868101902304B00213D5F /* Person.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Person.hpp; sourceTree = "<group>"; };
+		F6E868111902304B00213D5F /* PhoneCall.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PhoneCall.cpp; sourceTree = "<group>"; };
+		F6E868121902304B00213D5F /* PhoneCall.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PhoneCall.hpp; sourceTree = "<group>"; };
+		F6E868131902304B00213D5F /* Product.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Product.cpp; sourceTree = "<group>"; };
+		F6E868141902304B00213D5F /* Product.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Product.hpp; sourceTree = "<group>"; };
+		F6E868151902304B00213D5F /* SalesConsultant.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SalesConsultant.cpp; sourceTree = "<group>"; };
+		F6E868161902304B00213D5F /* SalesConsultant.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = SalesConsultant.hpp; sourceTree = "<group>"; };
+		F6E868171902304B00213D5F /* State.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = State.cpp; sourceTree = "<group>"; };
+		F6E868181902304B00213D5F /* State.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = State.hpp; sourceTree = "<group>"; };
+		F6E868191902304B00213D5F /* Term.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Term.hpp; sourceTree = "<group>"; };
+		F6E8681A1902304B00213D5F /* Terms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Terms.cpp; sourceTree = "<group>"; };
+		F6E8681B1902304B00213D5F /* Terms.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Terms.hpp; sourceTree = "<group>"; };
+		F6E8681C1902304B00213D5F /* Travel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Travel.cpp; sourceTree = "<group>"; };
+		F6E8681D1902304B00213D5F /* Travel.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Travel.hpp; sourceTree = "<group>"; };
+		F6E8681E1902304B00213D5F /* Vendor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Vendor.cpp; sourceTree = "<group>"; };
+		F6E8681F1902304B00213D5F /* Vendor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vendor.hpp; sourceTree = "<group>"; };
+		F6E868321902309200213D5F /* Date.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Date.cpp; path = ../../Common/Date.cpp; sourceTree = "<group>"; };
+		F6E868331902309200213D5F /* List.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = List.cpp; path = ../../Common/List.cpp; sourceTree = "<group>"; };
+		F6E868341902309200213D5F /* String.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = String.cpp; path = ../../Common/String.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +122,47 @@
 		F669829C1900F316009D0399 /* Brokerage */ = {
 			isa = PBXGroup;
 			children = (
+				F6E868321902309200213D5F /* Date.cpp */,
+				F6E868331902309200213D5F /* List.cpp */,
+				F6E868341902309200213D5F /* String.cpp */,
+				F6E867FA1902304B00213D5F /* Address.cpp */,
+				F6E867FB1902304B00213D5F /* Address.hpp */,
+				F6E867FC1902304B00213D5F /* Company.cpp */,
+				F6E867FD1902304B00213D5F /* Company.hpp */,
+				F6E867FE1902304B00213D5F /* CompTerms.cpp */,
+				F6E867FF1902304B00213D5F /* CompTerms.hpp */,
+				F6E868001902304B00213D5F /* Customer.cpp */,
+				F6E868011902304B00213D5F /* Customer.hpp */,
+				F6E868021902304B00213D5F /* Deal.cpp */,
+				F6E868031902304B00213D5F /* Deal.hpp */,
+				F6E868041902304B00213D5F /* Domain.cpp */,
+				F6E868051902304B00213D5F /* Domain.hpp */,
+				F6E868061902304B00213D5F /* Event.cpp */,
+				F6E868071902304B00213D5F /* Event.hpp */,
+				F6E868081902304B00213D5F /* Meeting.cpp */,
+				F6E868091902304B00213D5F /* Meeting.hpp */,
+				F6E8680A1902304B00213D5F /* ObjectManager.cpp */,
+				F6E8680B1902304B00213D5F /* ObjectManager.hpp */,
+				F6E8680C1902304B00213D5F /* Order.cpp */,
+				F6E8680D1902304B00213D5F /* Order.hpp */,
+				F6E8680E1902304B00213D5F /* PersistentObject.hpp */,
+				F6E8680F1902304B00213D5F /* Person.cpp */,
+				F6E868101902304B00213D5F /* Person.hpp */,
+				F6E868111902304B00213D5F /* PhoneCall.cpp */,
+				F6E868121902304B00213D5F /* PhoneCall.hpp */,
+				F6E868131902304B00213D5F /* Product.cpp */,
+				F6E868141902304B00213D5F /* Product.hpp */,
+				F6E868151902304B00213D5F /* SalesConsultant.cpp */,
+				F6E868161902304B00213D5F /* SalesConsultant.hpp */,
+				F6E868171902304B00213D5F /* State.cpp */,
+				F6E868181902304B00213D5F /* State.hpp */,
+				F6E868191902304B00213D5F /* Term.hpp */,
+				F6E8681A1902304B00213D5F /* Terms.cpp */,
+				F6E8681B1902304B00213D5F /* Terms.hpp */,
+				F6E8681C1902304B00213D5F /* Travel.cpp */,
+				F6E8681D1902304B00213D5F /* Travel.hpp */,
+				F6E8681E1902304B00213D5F /* Vendor.cpp */,
+				F6E8681F1902304B00213D5F /* Vendor.hpp */,
 				F669829D1900F316009D0399 /* main.cpp */,
 				F669829F1900F316009D0399 /* Brokerage.1 */,
 			);
@@ -117,7 +220,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6E868361902309200213D5F /* List.cpp in Sources */,
+				F6E868231902304B00213D5F /* Customer.cpp in Sources */,
+				F6E868251902304B00213D5F /* Domain.cpp in Sources */,
+				F6E868221902304B00213D5F /* CompTerms.cpp in Sources */,
+				F6E868271902304B00213D5F /* Meeting.cpp in Sources */,
+				F6E8682F1902304B00213D5F /* Terms.cpp in Sources */,
+				F6E868311902304B00213D5F /* Vendor.cpp in Sources */,
+				F6E868281902304B00213D5F /* ObjectManager.cpp in Sources */,
+				F6E8682C1902304B00213D5F /* Product.cpp in Sources */,
+				F6E868211902304B00213D5F /* Company.cpp in Sources */,
+				F6E868261902304B00213D5F /* Event.cpp in Sources */,
+				F6E868241902304B00213D5F /* Deal.cpp in Sources */,
+				F6E868291902304B00213D5F /* Order.cpp in Sources */,
+				F6E868201902304B00213D5F /* Address.cpp in Sources */,
+				F6E8682E1902304B00213D5F /* State.cpp in Sources */,
+				F6E8682D1902304B00213D5F /* SalesConsultant.cpp in Sources */,
+				F6E8682A1902304B00213D5F /* Person.cpp in Sources */,
+				F6E868301902304B00213D5F /* Travel.cpp in Sources */,
+				F6E8682B1902304B00213D5F /* PhoneCall.cpp in Sources */,
 				F669829E1900F316009D0399 /* main.cpp in Sources */,
+				F6E868371902309200213D5F /* String.cpp in Sources */,
+				F6E868351902309200213D5F /* Date.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +351,7 @@
 				F66982A51900F316009D0399 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

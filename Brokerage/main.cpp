@@ -1,18 +1,28 @@
-//
-//  main.cpp
-//  Brokerage
-//
-//  Created by Tan Bui on 4/18/14.
-//  Copyright (c) 2014 tanbui. All rights reserved.
-//
-
 #include <iostream>
+using namespace std;
 
-int main(int argc, const char * argv[])
+#include "Domain.hpp"
+#include "Product.hpp"
+
+int main()
 {
+	Domain domain;
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
-    return 0;
+	List products = Product::getManager()->getAll();
+	SmartPtr<Iterator> iterator(products.getIterator());
+
+	for (Product *product = 0; iterator->hasNext(); )
+	{	  
+		product = (Product *) iterator->next();
+
+		if (product)
+		{
+			cout << "Product Name:   " << product->getName() << "\n";
+			cout << "        Desc:   " << product->getDescription() << "\n";
+			cout << "       Range:   " << product->getPriceRange() << "\n";
+            cout << "      Profit:   $" << product->getProfitFor() << endl;
+			cout << "\n\n";
+		}
+	}
+	//system("PAUSE");
 }
-
