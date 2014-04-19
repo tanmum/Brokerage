@@ -3,24 +3,23 @@ using namespace std;
 
 #include "Domain.hpp"
 #include "Product.hpp"
+#include "SalesConsultant.hpp"
 
 int main()
 {
 	Domain domain;
 
-	List products = Product::getManager()->getAll();
-	SmartPtr<Iterator> iterator(products.getIterator());
+	List sales = SalesConsultant::getManager()->getAll();
+	SmartPtr<Iterator> iterator(sales.getIterator());
 
-	for (Product *product = 0; iterator->hasNext(); )
+	for (SalesConsultant *sale = 0; iterator->hasNext(); )
 	{	  
-		product = (Product *) iterator->next();
+		sale = (SalesConsultant *) iterator->next();
 
-		if (product)
+		if (sale)
 		{
-			cout << "Product Name:   " << product->getName() << "\n";
-			cout << "        Desc:   " << product->getDescription() << "\n";
-			cout << "       Range:   " << product->getPriceRange() << "\n";
-            cout << "      Profit:   $" << product->getProfitFor() << endl;
+			cout << sale->getName() << endl;\
+            cout << "      total travel cost: $" << sale->getTravelCost() << endl;
 			cout << "\n\n";
 		}
 	}

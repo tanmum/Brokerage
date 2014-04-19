@@ -54,3 +54,14 @@ double Deal::getProfit()
     }
     return dealProfit;
 }
+
+double Deal::getTravelCost()
+{
+    SmartPtr<Iterator> it(events.getIterator());
+    auto cost = 0.0;
+    while (it->hasNext()) {
+        auto next = (Event*)it->next();
+        cost += next->getTravelCost();
+    }
+    return cost;
+}

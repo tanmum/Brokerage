@@ -39,6 +39,7 @@ public:
 
 	Event& getEventAt(int i);
     double getProfit();
+    double getTravelCost();
 }; 
 
 #endif

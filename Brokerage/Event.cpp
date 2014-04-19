@@ -36,3 +36,11 @@ double Event::getProfit()
     return gain - eventCost;
 }
 
+double Event::getTravelCost()
+{
+    if (travel) {
+        return travel->getCost();
+    }
+    return 0;
+}
+
