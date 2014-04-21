@@ -31,7 +31,7 @@ double Event::getProfit()
     SmartPtr<Iterator> it(orders.getIterator());
     while (it->hasNext()) {
         auto next = (Order*)it->next();
-        gain += next->getPrice();
+        gain += next->getProfit();
     }
     return gain - eventCost;
 }
