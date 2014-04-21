@@ -46,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F620EE911904C515009CF8FE /* Visitor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Visitor.hpp; sourceTree = "<group>"; };
 		F669829A1900F316009D0399 /* Brokerage */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Brokerage; sourceTree = BUILT_PRODUCTS_DIR; };
 		F669829D1900F316009D0399 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F669829F1900F316009D0399 /* Brokerage.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Brokerage.1; sourceTree = "<group>"; };
@@ -165,6 +166,7 @@
 				F6E8681F1902304B00213D5F /* Vendor.hpp */,
 				F669829D1900F316009D0399 /* main.cpp */,
 				F669829F1900F316009D0399 /* Brokerage.1 */,
+				F620EE911904C515009CF8FE /* Visitor.hpp */,
 			);
 			path = Brokerage;
 			sourceTree = "<group>";
