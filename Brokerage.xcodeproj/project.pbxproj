@@ -10,6 +10,7 @@
 		F620EE971904E74E009CF8FE /* ProfitVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F620EE951904E74E009CF8FE /* ProfitVisitor.cpp */; };
 		F620EE981904E74E009CF8FE /* ProfitVisitorEmbedded.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F620EE961904E74E009CF8FE /* ProfitVisitorEmbedded.cpp */; };
 		F620EE9B1904E7AE009CF8FE /* TravelVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F620EE9A1904E7AE009CF8FE /* TravelVisitor.cpp */; };
+		F620EE9E1904F392009CF8FE /* TravelCostByDestinationVisitor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F620EE9C1904F392009CF8FE /* TravelCostByDestinationVisitor.cpp */; };
 		F669829E1900F316009D0399 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F669829D1900F316009D0399 /* main.cpp */; };
 		F66982A01900F316009D0399 /* Brokerage.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = F669829F1900F316009D0399 /* Brokerage.1 */; };
 		F6E868201902304B00213D5F /* Address.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6E867FA1902304B00213D5F /* Address.cpp */; };
@@ -56,6 +57,8 @@
 		F620EE961904E74E009CF8FE /* ProfitVisitorEmbedded.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProfitVisitorEmbedded.cpp; sourceTree = "<group>"; };
 		F620EE991904E7AE009CF8FE /* TravelVisitor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TravelVisitor.hpp; sourceTree = "<group>"; };
 		F620EE9A1904E7AE009CF8FE /* TravelVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TravelVisitor.cpp; sourceTree = "<group>"; };
+		F620EE9C1904F392009CF8FE /* TravelCostByDestinationVisitor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TravelCostByDestinationVisitor.cpp; sourceTree = "<group>"; };
+		F620EE9D1904F392009CF8FE /* TravelCostByDestinationVisitor.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = TravelCostByDestinationVisitor.hpp; sourceTree = "<group>"; };
 		F669829A1900F316009D0399 /* Brokerage */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Brokerage; sourceTree = BUILT_PRODUCTS_DIR; };
 		F669829D1900F316009D0399 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		F669829F1900F316009D0399 /* Brokerage.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Brokerage.1; sourceTree = "<group>"; };
@@ -182,6 +185,8 @@
 				F669829D1900F316009D0399 /* main.cpp */,
 				F669829F1900F316009D0399 /* Brokerage.1 */,
 				F620EE911904C515009CF8FE /* Visitor.hpp */,
+				F620EE9C1904F392009CF8FE /* TravelCostByDestinationVisitor.cpp */,
+				F620EE9D1904F392009CF8FE /* TravelCostByDestinationVisitor.hpp */,
 			);
 			path = Brokerage;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 				F669829E1900F316009D0399 /* main.cpp in Sources */,
 				F6E868371902309200213D5F /* String.cpp in Sources */,
 				F6E868351902309200213D5F /* Date.cpp in Sources */,
+				F620EE9E1904F392009CF8FE /* TravelCostByDestinationVisitor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

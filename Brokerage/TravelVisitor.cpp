@@ -20,6 +20,7 @@ void TravelVisitor::execute(Deal * deal)
 
 void TravelVisitor::execute(Event *event)
 {
+    if (!event) return;
     auto travel = event->travel;
     if (travel) {
         travelCost += travel->getCost();

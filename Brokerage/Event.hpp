@@ -11,6 +11,7 @@ class Travel;
 class Order;
 class ProfitVisitorEmbedded;
 class TravelVisitor;
+class TravelCostByDestinationVisitor;
 
 class Event : public PersistentObject
 {
@@ -18,6 +19,7 @@ private:
 	static ObjectManager manager;	// This class' manager
 	friend class ProfitVisitorEmbedded;
     friend class TravelVisitor;
+    friend class TravelCostByDestinationVisitor;
 
 protected:
 	String comments;

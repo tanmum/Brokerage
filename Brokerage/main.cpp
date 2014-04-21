@@ -8,6 +8,7 @@ using namespace std;
 #include "ProfitVisitor.hpp"
 #include "ProfitVisitorEmbedded.hpp"
 #include "TravelVisitor.hpp"
+#include "TravelCostByDestinationVisitor.hpp"
 
 int main()
 {
@@ -57,7 +58,26 @@ int main()
 			cout << "   Travel Total: $" << *travelTotal << "\n\n";
 		}
 	}
-	
+    
+	for(int i = 0; i < scm.numberOfObjects(); i++)
+	{
+	    SalesConsultant *salesConsultant = (SalesConsultant*) scm[i];
+	    
+	    if (salesConsultant)
+	    {
+            cout << salesConsultant->getName() << "\n";
+            
+			TravelCostByDestinationVisitor travelVisitor;
+			salesConsultant->acceptVisitor(&travelVisitor);
+            travelVisitor.foreachDestinationToCost(
+               [](String destination, double cost)
+               {
+                   printf("%25s%f\n", (const char*)(destination<< " cost: $"), cost);
+               });
+			double *travelTotal = (double *) travelVisitor.getState();
+			printf("%25s%f\n\n", "Total travel cost: $", *travelTotal);
+		}
+	}
 	//system("PAUSE");
 	return 0;
 }
