@@ -25,8 +25,8 @@ public:
 
 	double getTeleConfCost() {return teleConfCost;}
 	void setTeleConfCost(double er) {teleConfCost = er;}
-    
-    double getCost();
+
+	double getCost();
 }; 
 
 #endif

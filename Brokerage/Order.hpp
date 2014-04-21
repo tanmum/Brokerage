@@ -2,14 +2,17 @@
 #define __ORDER_HPP__
 
 #include "ObjectManager.hpp"
+#include "Visitor.hpp"
 
 class Terms;
 class CompTerms;
+class ProfitVisitorEmbedded;
 
 class Order : public PersistentObject
 {
 private:
 	static ObjectManager manager;	// This class' manager
+	friend class ProfitVisitorEmbedded;
 
 protected:
 	String paymentTerms;	// Customer's payment terms
@@ -37,15 +40,16 @@ public:
 	String& getPaymentTerms() {return paymentTerms;}
 	void setPaymentTerms(String& str) {paymentTerms = str;}
 
-	Terms& getTerms() {return *terms;}
+	Terms *getTerms() {return terms;}
 	void setTerms(Terms& tm) {terms = &tm;}
 
-	CompTerms& getCompTerms() {return *compTerms;}
+	CompTerms *getCompTerms() {return compTerms;}
 	void setCompTerms(CompTerms& tm) {compTerms = &tm;}
 
 	void setTerms(Terms& t, CompTerms& ct);
-    
-    double getProfit();
+
+	double getProfit();
+	void acceptVisitor(Visitor *v) {if (v) v->execute(this);}
 }; 
 
 #endif

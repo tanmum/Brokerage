@@ -22,21 +22,6 @@ Domain::Domain()
 
 Domain::~Domain()
 {
-	/*
-	printf("Domain::~Domain()\n");
-	State::getManager()->deleteAll();
-    Address::getManager()->deleteAll();    
-    Product::getManager()->deleteAll();
-    Vendor::getManager()->deleteAll();
-    Terms::getManager()->deleteAll();
-	Customer::getManager()->deleteAll();
-	SalesConsultant::getManager()->deleteAll();
-	CompTerms::getManager()->deleteAll();
-	Deal::getManager()->deleteAll();
-	Event::getManager()->deleteAll();
-	Travel::getManager()->deleteAll();
-	Order::getManager()->deleteAll();
-	*/
 }
 
 void Domain::createDomainObjects() 

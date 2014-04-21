@@ -30,11 +30,10 @@ void Order::setTerms(Terms& t, CompTerms& ct)
 
 double Order::getProfit()
 {
-    if (!terms || ! compTerms) {
-        return 0;
-    }
-    
-    auto orderGain = (price * discount - terms->getPrice()) * quantity;
-    auto loss = compTerms->getCommission(orderGain);
-    return orderGain - loss;
+	double profit = 0;
+
+	double orderGain = (price * discount - terms->getPrice()) * quantity;
+	profit = orderGain - compTerms->getCommission(orderGain);
+
+	return profit;
 }

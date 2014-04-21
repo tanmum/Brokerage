@@ -21,26 +21,22 @@ Event::~Event()
     manager.remove(*this);
 }
 
-double Event::getProfit()
+double Event::getProfitFor()
 {
-    auto eventCost = getCost();
-    if (travel) {
-        eventCost += travel->getCost();
-    }
-    auto gain = 0.0;
-    SmartPtr<Iterator> it(orders.getIterator());
-    while (it->hasNext()) {
-        auto next = (Order*)it->next();
-        gain += next->getProfit();
-    }
-    return gain - eventCost;
-}
+	double profit = 0;
 
-double Event::getTravelCost()
-{
-    if (travel) {
-        return travel->getCost();
-    }
-    return 0;
-}
+	profit -= getCost();
 
+	if (travel)
+		profit -= travel->getCost();
+	
+	for(SmartPtr<Iterator> iterator(orders.getIterator()); iterator->hasNext(); )
+    {
+		Order *order = (Order *) iterator->next();
+
+		if (order)
+			profit += order->getProfit();
+	}
+
+	return profit;  
+}

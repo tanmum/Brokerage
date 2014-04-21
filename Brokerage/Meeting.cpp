@@ -11,5 +11,6 @@ Meeting::Meeting(char *cm, char *dt, char *ma, char *mi, double er, double fc, d
 
 double Meeting::getCost()
 {
-    return equipRent + foodCost + roomRental + teleConfCost;
+	return equipRent + foodCost + roomRental + teleConfCost;
 }
+

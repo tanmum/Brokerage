@@ -28,15 +28,4 @@ void SalesConsultant::setCompTerms(CompTerms& ct)
 	compTerms = &ct;
 }
 
-double SalesConsultant::getTravelCost()
-{
-    SmartPtr<Iterator> it(deals.getIterator());
-    auto cost = 0.0;
-    while (it->hasNext()) {
-        auto next = (Deal*)it->next();
-        cost += next->getTravelCost();
-    }
-    return cost;
-}
-
 

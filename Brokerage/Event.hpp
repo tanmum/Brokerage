@@ -5,14 +5,19 @@
 #include <vector>
 using namespace std;
 #include "ObjectManager.hpp"
+#include "Visitor.hpp"
 
 class Travel;
 class Order;
+class ProfitVisitorEmbedded;
+class TravelVisitor;
 
 class Event : public PersistentObject
 {
 private:
 	static ObjectManager manager;	// This class' manager
+	friend class ProfitVisitorEmbedded;
+    friend class TravelVisitor;
 
 protected:
 	String comments;
@@ -41,16 +46,16 @@ public:
 	String& getMainIssue() {return mainIssue;}
 	void setMainIssue(String& mi) {mainIssue = mi;}
 
+	double getProfitFor();
+	virtual double getCost() {return 0;}
+
 	void setTravel(Travel& tr) {travel = &tr;}
-	Travel& getTravel() {return *travel;}
+	Travel *getTravel() {return travel;}
 
 	List& getOrders() {return orders;}
 
     void addOrder(Order& order) {orders.append(&order);}
-    
-    double getProfit();
-    virtual double getCost() = 0;
-    double getTravelCost();
+	void acceptVisitor(Visitor *v) {if (v) v->execute(this);}
 }; 
 
 #endif

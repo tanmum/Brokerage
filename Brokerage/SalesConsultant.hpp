@@ -5,14 +5,17 @@
 #include <vector>
 using namespace std;
 #include "ObjectManager.hpp"
+#include "Visitor.hpp"
 
 class Deal;
 class CompTerms;
+class TravelVisitor;
 
 class SalesConsultant : public PersistentObject
 {
 private:
 	static ObjectManager manager;	// This class' manager
+    friend class TravelVisitor;
 
 protected:
 	String name;
@@ -37,8 +40,9 @@ public:
 
 	void setCompTerms(CompTerms& ct);
 	CompTerms& getCompTerms() {return *compTerms;}
-    
-    double getTravelCost();
+
+	List& getDeals() {return deals;}
+	void acceptVisitor(Visitor *v) {if (v) v->execute(this);}
 }; 
 
 #endif

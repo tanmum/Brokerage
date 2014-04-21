@@ -70,13 +70,12 @@ double Product::getProfitFor()
 {
 	double profit = 0;
 
-	// TODO: DONE
-    SmartPtr<Iterator> it(deals.getIterator());
-    while (it->hasNext()) {
-        auto next = (Deal*)it->next();
-        auto dealProfit = next->getProfit();
-        profit += dealProfit;
-    }
-
+	for (SmartPtr<Iterator> it(deals.getIterator()); it->hasNext(); )
+	{
+		Deal *d = (Deal *) it->next();
+		if (d)
+			profit += d->getProfitFor();
+	}
+	
 	return profit;
 }

@@ -15,6 +15,12 @@ protected:
 	double taxi;
 	String destination;
 
+public:
+	static ObjectManager *getManager() { return &manager; }	// Get the manager for this class
+
+	Travel(double af, double cr, double tx, char *dest);
+	~Travel();
+	
 	double getAirfare(){return airfare;}
 	void setAirfare(double af) {airfare = af;}
 
@@ -27,12 +33,6 @@ protected:
 	const String& getDestination() {return destination;}
 	void setDestination(String& dest) {destination = dest;}
 
-public:
-	static ObjectManager *getManager() { return &manager; }	// Get the manager for this class
-
-	Travel(double af, double cr, double tx, char *dest);
-	~Travel();
-	
 	double getCost();
 }; 
 

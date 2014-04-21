@@ -6,14 +6,17 @@
 
 #include "PersistentObject.hpp"
 #include "ObjectManager.hpp"
+#include "Visitor.hpp"
 
 class Terms;
 class Deal;
+class ProfitVisitorEmbedded;
 
 class Product : public PersistentObject
 {
 private:
 	static ObjectManager manager;	// This class' manager
+	friend class ProfitVisitorEmbedded;
 
 protected:
 	String name;
@@ -39,6 +42,10 @@ public:
 
 	String getPriceRange();
 	double getProfitFor();
+
+	List& getDeals() {return deals;}
+	List& getTerms() {return terms;}
+	void acceptVisitor(Visitor *v) {if (v) v->execute(this);}
 };
 
 #endif

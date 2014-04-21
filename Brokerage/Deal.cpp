@@ -29,6 +29,21 @@ Deal::~Deal()
     manager.remove(*this);
 }
 
+double Deal::getProfitFor()
+{
+	double profit = 0;
+
+	for (SmartPtr<Iterator> it(events.getIterator()); it->hasNext(); )
+	{
+		Event *e = (Event *) it->next();
+		if (e)
+			profit += e->getProfitFor();
+	}
+	
+	return profit;
+
+}
+
 Event& Deal::getEventAt(int i)
 {
 	Event *ret = 0;
@@ -41,27 +56,4 @@ Event& Deal::getEventAt(int i)
 	}
 
 	return *ret;
-}
-
-double Deal::getProfit()
-{
-    SmartPtr<Iterator> it(events.getIterator());
-    auto dealProfit = 0.0;
-    while (it->hasNext()) {
-        auto next = (Event*)it->next();
-        auto eventProfit = next->getProfit();
-        dealProfit += eventProfit;
-    }
-    return dealProfit;
-}
-
-double Deal::getTravelCost()
-{
-    SmartPtr<Iterator> it(events.getIterator());
-    auto cost = 0.0;
-    while (it->hasNext()) {
-        auto next = (Event*)it->next();
-        cost += next->getTravelCost();
-    }
-    return cost;
 }

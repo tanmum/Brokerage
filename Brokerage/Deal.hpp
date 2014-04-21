@@ -8,6 +8,10 @@ class Customer;
 class Event;
 class Product;
 class SalesConsultant;
+class ProfitVisitorEmbedded;
+class TravelVisitor;
+
+#include "Visitor.hpp"
 
 class Deal : public PersistentObject
 {
@@ -15,7 +19,9 @@ private:
 	static ObjectManager manager;	// This class' manager
 	static int curNumb;
 	static int getNextNumber() {return curNumb++;}
-	
+	friend class ProfitVisitorEmbedded;
+    friend class TravelVisitor;
+
 protected:
 	int number;
 	Customer *customer;
@@ -33,13 +39,14 @@ public:
 	void addEvent(Event& e) {events.append(&e);}
 	List& getEvents() {return events;}
 
+	double getProfitFor();
+
 	Customer& getCustomer() {return *customer;}
 	Product& getProduct() {return *product;}
 	SalesConsultant& getSalesConsultant() {return *salesConsultant;}
 
 	Event& getEventAt(int i);
-    double getProfit();
-    double getTravelCost();
+	void acceptVisitor(Visitor *v) {if (v) v->execute(this);}
 }; 
 
 #endif
